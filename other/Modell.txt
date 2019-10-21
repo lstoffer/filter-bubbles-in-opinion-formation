@@ -1,0 +1,33 @@
+Personen:
+	Sind mit anderen Personen verbunden
+	Diese Verbindungen sind gerichtet (Follower-Prinzip) und gewichtet
+	Hat eine Meinung
+	Hat ein Vertrauen in die eigene Meinung
+
+	Je mehr Follower eine Person hat, desto kleiner ist die Wahrscheinlichkeit, dass eine Person
+	ihre Meinung signifikant ändert.
+
+	Trifft eine Person immer wieder auf Personen, die eine andere Meinung haben, als sie selbst,
+	verliert die Person an Vertrauen in die eigene Meinung. Umgekehrt, wenn sie immer wieder
+	Personen trifft, die die eigene Meinung teilen, desto grösser wird das Vertrauen in die eigene
+	Meinung.
+	Hat eine Person nur wenig Vertrauen in die eigene Meinung und trifft auf eine Person mit
+	einer anderen Meinung, besteht die Wahrscheinlichkeit, dass die Person ihre Meinung
+	ändert (Gruppenzwang).
+
+	Eine Funktion bestimmt, welche zusätzlichen Personen einer Person empfohlen werden.
+
+Medien:
+	Medien können als Personen modelliert werden, die niemandem folgen und nur Follower
+	haben.
+
+
+
+
+Die Meinungen, die die Personen haben können beziehen sich nur auf ein Thema.
+
+Darstellung:
+	Zur Darstellung können die Personen in einem gerichteten Graphen dargestellt werden.
+	Personen in diesem Graphen sind näher zusammen, desto ähnlicher ihre Meinungen sind.
+	Dieser Graph kann in Abhängigkeit der Zeit dargestellt werden, um die Veränderungen
+	zu beobachten.
