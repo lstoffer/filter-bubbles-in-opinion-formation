@@ -125,11 +125,13 @@ if __name__ == "__main__":
     plt.plot(opinions_over_time)
     plt.ylabel("opinion")
     plt.xlabel("time")
-    plt.show()
+
+    plt.figure()
     plt.plot(confidence_over_time)
     plt.ylabel("confidence")
     plt.xlabel("time")
-    plt.show()
+
+    plt.figure()
     plt.plot(avg_d_over_time)
     plt.ylabel("average opinion difference")
     plt.xlabel("time")
