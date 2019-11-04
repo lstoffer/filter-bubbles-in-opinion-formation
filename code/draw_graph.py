@@ -63,7 +63,7 @@ def show_graph(W, o, x, y):
     n = x.size
     for u in range(n):
         vertex = plt.Circle((x[u], y[u]),
-                            radius=(0.01 + m.pow(np.array(W[:,u]).sum(), 1)/n),
+                            radius=(0.01 + m.pow(np.array(W[:,u]).sum(), 0.5)/n),
                             fc=[o[u], 0, 1-o[u]])
         plt.gca().add_patch(vertex)
         for v in range(n):
