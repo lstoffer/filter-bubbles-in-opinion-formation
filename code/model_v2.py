@@ -31,8 +31,8 @@ class Vertex:
         self.number = number
         self.opinion = opinion
         self.confidence = confidence
-        self.neighbours = [] # list of individuals this vertex follows
-        self.trust = {} # maps for all neighbours from v.number to "trust in v"-value
+        self.neighbours = []  # list of individuals this vertex follows
+        self.trust = {}  # maps for all neighbours from v.number to "trust in v"-value
     
     def update_opinion(self):
         other_opinions = 0.0
