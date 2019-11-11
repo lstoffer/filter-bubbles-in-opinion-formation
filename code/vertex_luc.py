@@ -57,8 +57,6 @@ class Vertex:
         time_percent = T/(t+1)
         if follower_percent >= 0.3:
             self.confidence += 0.01
-        elif (follower_percent <= 0.02) and (time_percent > 0.33):
-            self.confidence += -0.01
         # else:
         #     self.confidence = 0.9*self.confidence + 0.1*(self.num_followers/n - self.opinion_differences())
         # # make sure that confidence stays between 0.0 and 1.0
