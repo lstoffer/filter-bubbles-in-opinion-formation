@@ -70,5 +70,3 @@ if __name__ == "__main__":
     plt.ylabel("confidence")
     plt.xlabel("time")
     plt.show()
-
-    #das ist ein TEST KOMmenntenar für diaedr verstions kontroslle
