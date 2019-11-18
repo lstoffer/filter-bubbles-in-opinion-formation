@@ -5,7 +5,7 @@
 import numpy as np
 import csv
 
-import vertex as v
+import vertex_v3 as v
 
 def build_W_o(vertices):
     """
@@ -20,7 +20,8 @@ def build_W_o(vertices):
     for u in vertices:
         o[u.number] = u.opinion
         for v in u.following:
-            W[u.number,v.number] = u.trust[v.number]
+            if u.number != v.number:
+                W[u.number,v.number] = u.trust[v.number]
     return W, o
 
 def make_csv(W):
