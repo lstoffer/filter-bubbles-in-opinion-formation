@@ -1,10 +1,3 @@
-"""
-    model_v2:
-    - Version where everithing is computed with objects (class vertex)
-    - Slightly different than model_v1, more similar to Beat's approach
-    - To use draw_graph, you have to generate the adjacency matrix with trust-values as entries.
-"""
-
 import numpy as np
 import math as m
 import random as r
@@ -19,13 +12,13 @@ n = 100 # number of vertices (individuals)
 T = 200 # number of timesteps
 max_follow = 3 # maximum amount one can add to following in one 
 # less filter bubbles for bf -> 0 and bu -> infinity
-bu = 20 # !!!
-bf = 10 # !!!
+bu = 20
+bf = 10
 p_follow = lambda opinion_distance: m.exp(-bf*opinion_distance)
 p_unfollow = lambda trust: m.exp(-bu*trust)
-trust_stability = 0.99 # !!!
-confidence_mean = 0.9 # !!!
-confidence_std = 0.1 # !!!
+trust_stability = 0.99
+confidence_mean = 0.9
+confidence_std = 0.1
 
 def init_model(n):
     vertices = []
