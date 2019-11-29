@@ -1,9 +1,9 @@
-# The-influence-of-filter-bubbles-in-opinion-formation (Template)
+# Filter Bubbles in Opinion Formation
 (text between brackets to be removed)
 
-> * Group Name: (be creative!)
-> * Group participants names: (alphabetically sorted by last name)
-> * Project Title: (can be changed later)
+> * Group Name: Bubble Trouble
+> * Group participants names: Adrian Hartmann, Beat Nairz, Luc Stoffer, Leo Widmer
+> * Project Title: Filter Bubbles in Opinion Formation
 
 ## General Introduction
 
