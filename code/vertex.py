@@ -1,14 +1,14 @@
 import random as r
 
 class Vertex:
-    def __init__(self, number, opinion, confidence, p_follow, p_unfollow, max_follow):
+    def __init__(self, number, opinion, confidence, p_follow, p_unfollow, max_follow, trust_stability):
         self.number = number
         self.opinion = opinion
         self.confidence = confidence
         self.p_follow = p_follow
         self.p_unfollow = p_unfollow
         self.max_follow = max_follow # maximum number of vertices it can add to following in one timestep
-        self.num_followers = 0
+        self.trust_stability = trust_stability
         self.following = [] # list of individuals this vertex follows
         self.trust = {} # maps for all following from v.number to "trust in v"-value
     
@@ -21,44 +21,33 @@ class Vertex:
         self.opinion = self.opinion*self.confidence + (1.0-self.confidence)*other_opinions
     
     def update_following(self, vertices):
+        # unfollow
+        for v in self.following:
+            # unfollow with probability p_unfollow
+            if r.random() < self.p_unfollow(self.trust[v.number]):
+                self.following.remove(v)
+                del self.trust[v.number]
+        
+        # follow
         num_followed = 0
         # go through all vertices in a random order
         random_indices = [i for i in range(len(vertices))]
         r.shuffle(random_indices)
         for v in [vertices[i] for i in random_indices]:
             num_following = len(self.following)
-            if v in self.following:
-                # unfollow with probability p_unfollow
-                if r.random() < self.p_unfollow(self.trust[v.number]):
-                    self.following.remove(v)
-                    del self.trust[v.number]
-                    v.num_followers -= 1
-            elif num_followed < self.max_follow:
-                # follow with probability p_follow
-                if r.random() < self.p_follow(abs(self.opinion - v.opinion)):
-                    self.following.append(v)
-                    self.trust[v.number] = 1.0 / max(num_following, 1.0)
-                    num_followed += 1
-                    v.num_followers += 1
+            if num_followed >= self.max_follow: break
+            # follow with probability p_follow
+            if v not in self.following and \
+                r.random() < self.p_follow(abs(self.opinion - v.opinion)):
+                self.following.append(v)
+                self.trust[v.number] = 1.0 / max(num_following, 1.0)
+                num_followed += 1
     
     def update_trust(self):
         trust_sum = 0.0
         for v in self.following:
-            self.trust[v.number] += self.trust[v.number]*(v.confidence - abs(self.opinion - v.opinion))
+            self.trust[v.number] += (1.0-self.trust_stability)*(v.confidence - abs(self.opinion - v.opinion))
             trust_sum += self.trust[v.number]
         # normalize
         for v in self.following:
             self.trust[v.number] /= trust_sum
-    
-    def update_confidence(self, n):
-        self.confidence = 0.9*self.confidence \
-                        + 0.1*(self.num_followers/n - self.opinion_differences())
-        # make sure that confidence stays between 0.0 and 1.0
-        self.confidence = min(max(self.confidence, 0.0), 1.0)
-    
-    def opinion_differences(self):
-        # returns weighted average of opinion differences between self and the ones it's following
-        opinion_difference = 0.0
-        for v in self.following:
-            opinion_difference += self.trust[v.number] * abs(self.opinion - v.opinion)
-        return opinion_difference
