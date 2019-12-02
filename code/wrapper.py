@@ -1,8 +1,8 @@
-import math
 import random
 import numpy
 import scipy
 import matplotlib.pyplot as plt
+import math as m
 import time as t
 
 from model_v3 import *
@@ -27,7 +27,7 @@ max_follow = 5
 
 # separation of opinions: creates two strands which are separated by sep
 # sep must be in [0,1]
-sep = 0.5
+sep = 0.0
 
 # following and unfollowing probabilities. (higher bf, lower bu -> more filter bubbles)
 # suggested bf: 5, 10, 20. suggested bu: 5, 10, 20.
