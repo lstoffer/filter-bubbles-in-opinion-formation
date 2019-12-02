@@ -1,5 +1,10 @@
+import math
+import random
+import numpy
+import scipy
 import matplotlib.pyplot as plt
 import time as t
+
 from model_v3 import *
 
 
