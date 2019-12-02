@@ -6,7 +6,7 @@ from mpl_toolkits.mplot3d import Axes3D
 from scipy.stats import truncnorm
 import time
 
-import vertex_v3 as v
+import vertex as v
 import draw_graph as dg
 
 # ------------------------------------------------------------- #
