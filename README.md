@@ -52,7 +52,9 @@ As the model is similar to the one in Hegselmann and Krause, we expect that opin
 ## References 
 
 Hegselmann, R.; Krause, U., JASS 5, 3, 2002, Opinion Dynamics and Bounded Confidence
+
 Laguna, M. F. et al. , Research Article, 2004, Minorities in a Model for Opinion Formation
+
 Holme, P.; Newman, M., Nonequilibrium phase transition in the coevolution of networks and opinions, arXiv:physics/0603023v3
 
 
