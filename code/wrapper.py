@@ -45,7 +45,7 @@ V = init_model_wrapper(n, confidence_mean, confidence_std, max_follow, sep, p_fo
 
 """
 ############################################################
-Iteration (simulation). Specifiy the number of steps.
+Iteration (simulation). Specify the number of steps.
 ############################################################
 """
 
