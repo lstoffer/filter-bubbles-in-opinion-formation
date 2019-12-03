@@ -20,7 +20,7 @@ https://www.python.org/downloads/
 
 5. Run code
 * type:\
-  `> python.exe [Path to our model (model.py, vertex.py, draw_graph.py)]`
+  `> python.exe [Path to model.py (with vertex.py, draw_graph.py in the same folder]` (for example C:\Users\name\Downloads\code\model.py)
 
 
 __Linux:__
