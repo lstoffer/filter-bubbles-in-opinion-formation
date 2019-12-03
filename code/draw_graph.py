@@ -2,6 +2,13 @@
     Provides the functions
     - draw_graph(vertices) that draws a nice graph (the color corresponds to the opinion)
     - make_csv(vertices) that makes a csv file that's compatible with gephi
+  _____                      _              _ _ _   
+ |  __ \                    | |            | (_) |  
+ | |  | | ___    _ __   ___ | |_    ___  __| |_| |_ 
+ | |  | |/ _ \  | '_ \ / _ \| __|  / _ \/ _` | | __|
+ | |__| | (_) | | | | | (_) | |_  |  __/ (_| | | |_ 
+ |_____/ \___/  |_| |_|\___/ \__|  \___|\__,_|_|\__|
+
 """
 
 import numpy as np

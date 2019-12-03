@@ -1,3 +1,10 @@
+"""
+Made by Team Bubble Trouble for Agent-Based Modeling and Social System Simulation
+
+Autumn Semester 2019
+
+"""
+
 import numpy as np
 import math as m
 import random as r
@@ -8,6 +15,14 @@ import time
 
 import vertex as v
 import draw_graph as dg
+
+"""____                                _            
+ |  __ \                              | |           
+ | |__) |_ _ _ __ __ _ _ __ ___   ___ | |_ ___ _ __ 
+ |  ___/ _` | '__/ _` | '_ ` _ \ / _ \ __/ _ \ '__|
+ | |  | (_| | | | (_| | | | | | |  __/||   __/ |   
+ |_|   \__,_|_|  \__,_|_| |_| |_|\___|\__\___|_|   
+""" 
 
 # ------------------------------------------------------------- #
 # Specifiy the following parameters for network initialization. #
@@ -31,6 +46,14 @@ PLOT_NETWORK = False # could take some time for n > 100
 MAKE_CSV = False # makes a csv file that's compatible with gephi (weighted adjacency matrix)
 
 
+
+"""_____ _                 _       _   _             
+  / ____(_)               | |     | | (_)            
+ | (___  _ _ __ ___  _   _| | __ _| |_ _  ___  _ __  
+  \___ \| | '_ ` _ \| | | | |/ _` | __| |/ _ \| '_ \ 
+  ____) | | | | | | | |_| | | (_| | |_| | (_) | | | |
+ |_____/|_|_| |_| |_|\__,_|_|\__,_|\__|_|\___/|_| |_|
+"""
 # -----------------------#
 #       Functions        #
 # -----------------------#
