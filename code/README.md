@@ -9,18 +9,18 @@ https://www.python.org/downloads/
 3. Open the command prompt
 - Click on the windows icon, type "cmd" and press enter to open the command prompt.
 - type:
-  > cd\
-  > cd [Path to python.exe] (for example C:\Users\name\AppData\Local\Programs\Python\Python38-32)
+  cd\\
+  cd [Path to python.exe] (for example C:\Users\name\AppData\Local\Programs\Python\Python38-32)
 
 4. Install libraries
 - type:
-  > pip install numpy
-  > pip install matplotlib
-  > pip install scipy
+  pip install numpy
+  pip install matplotlib
+  pip install scipy
 
 5. Run code
 - type
-  > python.exe [Path to our model (model.py, vertex.py, draw_graph.py)]
+  python.exe [Path to our model (model.py, vertex.py, draw_graph.py)]
 
 
 Linux:
