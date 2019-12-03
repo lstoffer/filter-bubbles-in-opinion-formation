@@ -9,7 +9,7 @@ https://www.python.org/downloads/
 3. Open the command prompt
 - Click on the windows icon, type "cmd" and press enter to open the command prompt.
 - type:
-  > cd\\
+  > cd\
   > cd [Path to python.exe] (for example C:\Users\name\AppData\Local\Programs\Python\Python38-32)
 
 4. Install libraries
