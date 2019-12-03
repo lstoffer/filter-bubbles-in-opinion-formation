@@ -9,7 +9,7 @@ import math as m
 import csv
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-import vertex_v3 as v
+import vertex as v
 
 def gen_coords(vertices):
     """
