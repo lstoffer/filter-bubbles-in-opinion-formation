@@ -1,22 +1,24 @@
 # How to reproduce our results
 
 Windows:
-1. Download Python and follow the installation instructions
+1. Download our code folder
+
+2. Download Python and follow the installation instructions
 https://www.python.org/downloads/
 
-2. Install libraries
+3. Open the command prompt
 - Click on the windows icon, type "cmd" and press enter to open the command prompt.
 - type:
-  > cd\
+  > cd\\
   > cd [Path to python.exe] (for example C:\Users\name\AppData\Local\Programs\Python\Python38-32)
+
+4. Install libraries
+- type:
   > pip install numpy
   > pip install matplotlib
   > pip install scipy
 
-3. Run code
-- If you skipped step 2, type
-  > cd\
-  > cd [Path to python.exe] (for example C:\Users\name\AppData\Local\Programs\Python\Python38-32)
+5. Run code
 - type
   > python.exe [Path to our model (model.py, vertex.py, draw_graph.py)]
 
