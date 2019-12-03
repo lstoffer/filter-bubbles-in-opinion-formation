@@ -12,7 +12,6 @@ import draw_graph as dg
 # ------------------------------------------------------------- #
 # Specifiy the following parameters for network initialization. #
 # ------------------------------------------------------------- #
-
 n = 50 # number of vertices (individuals)
 T = 200 # number of timesteps
 # less filter bubbles for bf -> 0 and bu -> infinity
@@ -32,7 +31,9 @@ PLOT_NETWORK = False # could take some time for n > 100
 MAKE_CSV = False # makes a csv file that's compatible with gephi (weighted adjacency matrix)
 
 
-
+# -----------------------#
+#       Functions        #
+# -----------------------#
 def init_model(n, bf, bu):
     p_follow = lambda opinion_distance: m.exp(-bf*opinion_distance)
     p_unfollow = lambda trust: m.exp(-bu*trust)
@@ -57,9 +58,9 @@ def simulation(vertices, T):
             u.update_trust()
     return opinions_over_time
 
-"""
-    MAIN
-"""
+# ------------------#
+#       MAIN        #
+# ------------------#
 if __name__ == "__main__":
 
     # initialize model
@@ -68,10 +69,7 @@ if __name__ == "__main__":
     # simulation
     opinions_over_time = simulation(vertices, T)
 
-    # ----------------#
-    # Display results #
-    # ----------------#
-
+    # Show results
     # show opinion over time
     if PLOT_OPINION:
         plt.plot(opinions_over_time)
