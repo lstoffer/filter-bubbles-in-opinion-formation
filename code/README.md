@@ -2,8 +2,8 @@
 
 __Windows:__
 1. Download our code folder:
-  * Download as zip
-  * clone the repository with git
+   * Download as zip
+   * clone the repository with git
 
 2. Download Python and follow the instructions in the installation wizzard:\
 https://www.python.org/downloads/
@@ -25,8 +25,8 @@ https://www.python.org/downloads/
 
 4. Run our code:
    * type:\
-`> python [Path to model.py (with vertex.py, draw_graph.py in the same folder)]`\ 
-(for example C:\Users\name\Downloads\code\model.py)
+  `> python [Path to model.py (with vertex.py, draw_graph.py in the same folder)]`<br>
+  (for example C:\Users\name\Downloads\code\model.py)
   
 5. Modify the parameters:
    * Open `model.py` in your favorite IDE or texteditor
