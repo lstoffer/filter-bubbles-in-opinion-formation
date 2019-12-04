@@ -2,16 +2,16 @@
 
 __Windows:__
 1. Download our code folder:
-   * Download as zip
+> * Download as zip
 
 2. Download Python and follow the instructions in the installation wizzard:\
 https://www.python.org/downloads/
 
 3. Install all required libraries:
-   * Open the command prompt
-   * Check if pip is installed `py -3 -m ensurepip`
-     * if not, follow this [guide](https://www.liquidweb.com/kb/install-pip-windows/) to install it
-   * type:\
+> * Open the command prompt
+> * Check if pip is installed `py -3 -m ensurepip`
+>> * if not, follow this [guide](https://www.liquidweb.com/kb/install-pip-windows/) to install it
+> * type:\
   `> python -m pip install random`\
   `> python -m pip install numpy`\
   `> python -m pip install math`\
@@ -23,17 +23,17 @@ https://www.python.org/downloads/
   `> python -m pip install tk`
 
 4. Modify the parameters:
-   * Open `model.py` in your favorite IDE or texteditor
-   * Modify the parameters (marked by comments) to reproduce our results
+> * Open `model.py` in your favorite IDE or texteditor
+> * Modify the parameters (marked by comments) to reproduce our results
    
 5. Run our code:
-   * type:\
+> * type:\
   `> python [Path to model.py (with vertex.py, draw_graph.py in the same folder)]`<br>
   (for example C:\Users\name\Downloads\code\model.py)
   
 __Linux:__
 1. Download our code folder:
-   * Download as zip
+> * Download as zip
 
 2. Install Python:
     ~~~
@@ -42,10 +42,10 @@ __Linux:__
     ~~~
 
 3. Install all required libraries:
-   * Open the command prompt
-   * Install pip for python
+> * Open the command prompt
+> * Install pip for python
    `$ sudo apt-get install python3-pip`
-   * type:\
+> * type:\
   `$ sudo pip3 install random`\
   `$ sudo pip3 install numpy`\
   `$ sudo pip3 install math`\
@@ -57,34 +57,33 @@ __Linux:__
   `$ sudo pip3 install tk`
 
 4. Modify the parameters:
-   * Open `model.py` in your favorite IDE or texteditor
-   * Modify the parameters (marked by comments) to reproduce our results
+> * Open `model.py` in your favorite IDE or texteditor
+> * Modify the parameters (marked by comments) to reproduce our results
    
 5. Run our code:
-   * type:\
+> * type:\
   `$ python [Path to model.py (with vertex.py, draw_graph.py in the same folder)]`<br>
   (for example /home/usr/name/Desktop/code/model.py)
   
 __Mac:__
 1. Download our code folder:
-   * Download as zip
+> * Download as zip
 
 2. Install Python:
-    * Install Homebrew (package manager)
+> * Install Homebrew (package manager)
     `$ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"`
-    * Install pthon itself
+> * Install pthon itself
     `brew install python`
 
 3. Install all required libraries:
-   * Open the command prompt
-   * Install pip for python
-   ~~~
-   $ curl -O http://python-distribute.org/distribute_setup.py
-   $ python distribute_setup.py
-   $ curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py
-   $ python get-pip.py
-   ~~~
-   * type:\
+> * Open the command prompt
+> * Install pip for python\
+`$ curl -O http://python-distribute.org/distribute_setup.py`\
+`$ python distribute_setup.py`\
+`$ curl -O https://raw.github.com/pypa/pip/master/contrib/get-pip.py`\
+`$ python get-pip.py`
+
+> * type:\
   `$ pip install random`\
   `$ pip install numpy`\
   `$ pip install math`\
@@ -96,10 +95,10 @@ __Mac:__
   `$ pip install tk`
 
 4. Modify the parameters:
-   * Open `model.py` in your favorite IDE or texteditor
-   * Modify the parameters (marked by comments) to reproduce our results
+> * Open `model.py` in your favorite IDE or texteditor
+> * Modify the parameters (marked by comments) to reproduce our results
    
 5. Run our code:
-   * type:\
+> * type:\
   `$ python [Path to model.py (with vertex.py, draw_graph.py in the same folder)]`<br>
   (for example /Users/username/Desktop/code/model.py)
