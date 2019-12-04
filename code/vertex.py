@@ -16,7 +16,7 @@ class Vertex:
         self.p_unfollow = p_unfollow
         self.max_follow = max_follow # maximum number of vertices it can add to following in one timestep
         self.trust_stability = trust_stability
-        self.following = [] # list of individuals this vertex follows
+        self.following = [] # list of agents this vertex follows
         self.trust = {} # maps for all following from v.number to "trust in v"-value
     
     def update_opinion(self):
