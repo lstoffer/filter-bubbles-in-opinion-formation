@@ -3,7 +3,6 @@
 __Windows:__
 1. Download our code folder:
    * Download as zip
-   * clone the repository with git
 
 2. Download Python and follow the instructions in the installation wizzard:\
 https://www.python.org/downloads/
@@ -34,5 +33,37 @@ https://www.python.org/downloads/
 
 
 __Linux:__
+1. Download our code folder:
+   * Download as zip
+
+2. Install Python:
+    ~~~
+    $ sudo apt-get update
+    $ sudo apt-get install python3.8
+    ~~~
+
+3. Install all required libraries:
+   * Open the command prompt
+   * Install pip for python
+   `$ sudo apt-get install python3-pip`
+   * type:\
+  `$ sudo pip3 install random`\
+  `$ sudo pip3 install numpy`\
+  `$ sudo pip3 install math`\
+  `$ sudo pip3 install matplotlib`\
+  `$ sudo pip3 install mpl_toolkits`\
+  `$ sudo pip3 install scipy`\
+  `$ sudo pip3 install time`\
+  `$ sudo pip3 install csv`\
+  `$ sudo pip3 install tk`
+
+4. Run our code:
+   * type:\
+  `> python [Path to model.py (with vertex.py, draw_graph.py in the same folder)]`<br>
+  (for example /home/usr/name/Desktop/code/model.py)
+  
+5. Modify the parameters:
+   * Open `model.py` in your favorite IDE or texteditor
+   * Modify the parameters (marked by comments) to reproduce our results
 
 __Mac:__
