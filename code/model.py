@@ -27,7 +27,7 @@ import draw_graph as dg
 # ------------------------------------------------------------- #
 # Specifiy the following parameters for network initialization. #
 # ------------------------------------------------------------- #
-n = 50 # number of vertices (individuals)
+n = 50 # number of vertices (agents)
 T = 200 # number of timesteps
 # less filter bubbles for bf -> 0 and bu -> infinity
 bf = 50 # beta_f
