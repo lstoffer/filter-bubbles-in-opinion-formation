@@ -8,6 +8,8 @@ __Windows:__
 https://www.python.org/downloads/
 
     We recommend using version 3.8. During the installation, make sure to check the box "Add Python 3.8 to PATH" (otherwise you won't be    able to use python from the command line).
+    
+Alternatively, download Anaconda here: https://www.anaconda.com/ With Anaconda, all necessary libraries are included and you can skip step 3.
 
 3. Install all required libraries:
 > * Open the command prompt
