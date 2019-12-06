@@ -202,7 +202,7 @@ This approach was chosen to model algorithms by social media, which analyse a us
 
 \section{Implementation}\label{sec:implementation}
 \subsection{Initial state}
-Our network \((V, A)\) will be represented as an adjacency list.\par
+Our network \((V, A)\) with the set of vertices \(V\) and set of edges \(A\) will be represented as an adjacency list.\par
 In the initial state our network has no connections. By running the simulation for a while, the network will naturally build connections between mostly like-minded agents. This way we do not have to make initial artificial random connections which may be relatively unrealistic.\par
 All our functions, namely opinion, trust and confidence, map to \([0,1]\) for reason of simplicity. They are concretely implemented as follows.
 \subsubsection{Opinion}
@@ -374,14 +374,14 @@ It would also be interesting to consider different network structures, where a v
 
 It is a possibility to use real-world data and study, which aspects of the dynamics are captured by our model. While it is unlikely that the model is able to realistically describe the system, it might give valuable insights, both into social media dynamics as well as improvement of the model.
 
-\newpage
+%\newpage
 \begin{thebibliography}{9}
     \bibitem{quote} Kevin J. Delaney (February 21, 2017). "Filter bubbles are a serious problem with news, says Bill Gates". Quartz. Retrieved 15 November 2019.
     
     \bibitem{wikiquote} Wikipedia, Wikimedia Foundation. Last accessed 15 November 2019.\\\texttt{en.wikipedia.org/wiki/Filter\_bubble}
     
     \bibitem{USBubble}
-    Medium, A Medium Corporation. Last accessed 20 November 2019.\\ \texttt{medium.com/@willrinehart/the-election-of-2016-and-the-filter-bubble-thesis-in-2017-51cd7520ed7}
+    Medium, A Medium Corporation. Last accessed 20 November 2019.\\ \texttt{medium.com/@willrinehart/the-election-of-2016-and-the-\\filter-bubble-thesis-in-2017-51cd7520ed7}
     
     \bibitem{review_od}
     Hegselmann, R., Krause, U., JASS \textbf{5}, 3, 2002,\\
